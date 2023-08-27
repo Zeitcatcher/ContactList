@@ -9,17 +9,14 @@ import UIKit
 
 class ContactListViewController: UITableViewController {
 
-    var contactList = DataStore.getContacts()
+    var contactList = Person.getContacts()
+    var persons: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     // MARK: - Table view data source
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        1
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         contactList.count
     }
@@ -28,9 +25,17 @@ class ContactListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
         let contact = contactList[indexPath.row]
         var content = cell.defaultContentConfiguration()
+        
         content.text = contact.fullName
         cell.contentConfiguration = content
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let detailVC = segue.destination as? ContactDetailsViewController else { return }
+            detailVC.person = persons[indexPath.row]
+        }
     }
 }

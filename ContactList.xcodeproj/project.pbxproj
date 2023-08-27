@@ -15,6 +15,9 @@
 		D91DD5452A996792004704E9 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91DD5442A996792004704E9 /* ContactListViewController.swift */; };
 		D91DD5472A996822004704E9 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91DD5462A996822004704E9 /* DataStore.swift */; };
 		D91DD54A2A996934004704E9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91DD5492A996934004704E9 /* Person.swift */; };
+		D91DD54D2A99D0F0004704E9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91DD54C2A99D0F0004704E9 /* TabBarViewController.swift */; };
+		D91DD54F2A99D172004704E9 /* SectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91DD54E2A99D172004704E9 /* SectionsTableViewController.swift */; };
+		D91DD5512A99D4C8004704E9 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91DD5502A99D4C8004704E9 /* ContactDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		D91DD5442A996792004704E9 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		D91DD5462A996822004704E9 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		D91DD5492A996934004704E9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D91DD54C2A99D0F0004704E9 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D91DD54E2A99D172004704E9 /* SectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsTableViewController.swift; sourceTree = "<group>"; };
+		D91DD5502A99D4C8004704E9 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +70,7 @@
 				D91DD5412A99670D004704E9 /* ViewControllers */,
 				D91DD5422A996718004704E9 /* Storyboards */,
 				D91DD5432A996723004704E9 /* Resources */,
-				D91DD5482A99682A004704E9 /* DataStorage */,
+				D91DD5482A99682A004704E9 /* Services */,
 				D91DD54B2A996939004704E9 /* Models */,
 			);
 			path = ContactList;
@@ -84,6 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				D91DD5442A996792004704E9 /* ContactListViewController.swift */,
+				D91DD54C2A99D0F0004704E9 /* TabBarViewController.swift */,
+				D91DD54E2A99D172004704E9 /* SectionsTableViewController.swift */,
+				D91DD5502A99D4C8004704E9 /* ContactDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -105,12 +114,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		D91DD5482A99682A004704E9 /* DataStorage */ = {
+		D91DD5482A99682A004704E9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				D91DD5462A996822004704E9 /* DataStore.swift */,
 			);
-			path = DataStorage;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		D91DD54B2A996939004704E9 /* Models */ = {
@@ -194,8 +203,11 @@
 			files = (
 				D91DD5452A996792004704E9 /* ContactListViewController.swift in Sources */,
 				D91DD5472A996822004704E9 /* DataStore.swift in Sources */,
+				D91DD54F2A99D172004704E9 /* SectionsTableViewController.swift in Sources */,
 				D91DD54A2A996934004704E9 /* Person.swift in Sources */,
 				D91DD52D2A9966B8004704E9 /* AppDelegate.swift in Sources */,
+				D91DD54D2A99D0F0004704E9 /* TabBarViewController.swift in Sources */,
+				D91DD5512A99D4C8004704E9 /* ContactDetailsViewController.swift in Sources */,
 				D91DD52F2A9966B8004704E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
